@@ -15,7 +15,7 @@ function Bookinghistory(){
     useEffect(() => {
       const token = localStorage.getItem('token');
       const query = dateFilter ? `date=${dateFilter}` : `search=${encodeURIComponent(search)}`;
-      fetch(`http://localhost:4000/bookinghistory/?${query}`, {
+      fetch(`https://lorry-backend.onrender.com/bookinghistory/?${query}`, {
           headers: {
               'Content-Type': 'application/json',
               'auth-token': token
@@ -38,7 +38,7 @@ function Bookinghistory(){
    function deleteItem(itemId) {
     // Confirmation dialog
       if (window.confirm("Are you sure you want to delete this record?")) {
-          fetch(`http://localhost:4000/booking/${itemId}`, {
+          fetch(`https://lorry-backend.onrender.com/booking/${itemId}`, {
               method: 'DELETE',
           })
           .then(response => response.json())
