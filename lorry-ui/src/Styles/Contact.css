@@ -1,0 +1,84 @@
+.contactContainer {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #212529;
+  background: #f8f9fa;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  max-width: 1200px; /* Set a max-width for larger screens */
+}
+
+.contactInfo {
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  margin-right: 20px; /* Spacing between columns */
+  display: flex;
+  flex-direction: column;
+}
+
+.mapArea {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.whatsappButton {
+  background-color: #25D366 !important;
+  color: white; 
+  padding: 10px 15px;
+  border: none;
+  display: inline-block; 
+  margin-top: 10px; 
+  width: auto !important;
+}
+
+.whatsappButton:hover {
+  background-color: #1da851 !important;
+}
+
+.icon {
+  color: #ff6600;
+  margin-right: 8px; 
+}
+
+.headcontact {
+  color: #ff6600 !important;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .contactInfo, .mapArea {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .contactContainer {
+    height: auto;
+    padding: 10px;
+  }
+
+  .headabout{
+    margin-top: 50px;
+  }
+}
+
+.ownerInfo{
+  margin-top: 20px;
+}
+
+.paraContact{
+  font-size: 18px;
+}

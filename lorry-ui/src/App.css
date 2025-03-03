@@ -1,0 +1,20 @@
+.container-top{
+  margin-top: 70px;
+}
+
+.container-top-book{
+  margin-top: 0px;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .container-top{
+    margin-top: 70px;
+  }
+  .container-top-book{
+    margin-top: 50px;
+  }
+}
+
+body{
+  background-color: #0d1326 !important;
+}

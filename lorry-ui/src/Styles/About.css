@@ -1,0 +1,57 @@
+/* Light theme adjustments for a brighter and more inviting look */
+.aboutPage {
+  background-color: #f8f9fa !important; 
+  color: #212529 !important; 
+  min-height: 100vh !important;
+  padding: 100px;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .aboutPage {
+    /* min-height: 100vh !important; */
+    padding: 30px;
+  }
+}
+
+/* Card styling for a lighter theme */
+.card {
+  background-color: #ffffff; /* White background for cards to stand out on the light page */
+  border: none;
+  border-radius: 8px !important;
+  /* text-align: center; */
+}
+
+/* Card titles with enhanced visibility and softer color */
+.card-title {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #8db9ec !important; 
+}
+
+/* Text styling within cards for better readability */
+.card-text {
+  font-size: 1.5rem !important;
+  color: #495057 !important; /* Darker grey for readability */
+}
+
+/* Headings on the page with a fresh and appealing color */
+.headabout {
+  color: #17a2b8 !important; /* Teal for a refreshing look */
+  text-align: center;
+}
+
+/* Optimized container for better content alignment */
+.container {
+  max-width: 960px;
+}
+
+/* Paragraph adjustments for consistent text appearance */
+.pabout {
+  font-size: 1.5rem !important;
+  font-weight: 350 !important;
+}
+
+/* Enhancing the hover effect for cards with a subtle shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Adding a shadow for depth on hover */
+}

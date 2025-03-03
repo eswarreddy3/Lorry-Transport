@@ -1,0 +1,54 @@
+footer {
+    /* margin-top: 40px; */
+    color: #6c757d !important;
+    background-color: #FFF8DC !important;
+  }
+  
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  footer .Rights {
+    text-align: left;
+    flex: 1;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  footer .Eswar {
+    text-align: right;
+    flex: 1;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  footer a {
+    animation: pulse 2s infinite;
+  }
+  
+  .eswarimg{
+    width: 28%;
+  }
+  
+  @media (max-width: 768px) {
+    footer .container {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    footer .Rights, footer .Eswar {
+      flex: none;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
+  
+    footer .Eswar a img {
+      width: 50%;
+    }
+  }
+  

@@ -1,0 +1,75 @@
+.loginBody {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1326; /* Dark blue background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  color: #fff;
+}
+
+.loginContainer {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  width: 400px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .loginContainer {
+    width: 320px;
+  }
+}
+
+.loginHead {
+  color: #ff6600;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.loginLabel{
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  display: block !important;
+  margin-bottom: 0px;
+  text-align: justify;
+}
+
+.loginInput, input[type="password"], input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.loginInput:focus, input[type="password"]:focus, input[type="text"]:focus {
+  border-color: #ff6600;
+  outline: none;
+}
+
+button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #e65c00;
+  transform: scale(1.05);
+}
