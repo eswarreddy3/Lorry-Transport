@@ -26,7 +26,7 @@ function Booking() {
     
         const token = localStorage.getItem('token'); // Retrieve the token from localStorage
     
-        fetch('http://localhost:4000/booking', {
+        fetch('https://lorry-backend.onrender.com/booking', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
