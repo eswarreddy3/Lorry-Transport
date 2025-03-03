@@ -49,13 +49,13 @@ function Navigation() {
                     <ul className="header__links">
                         <li className="header__link-wrapper"><a href="/" className="header__link">Home</a></li>
                         <li className="header__link-wrapper"><Link to="/about" className="header__link">About</Link></li>
-                        <li className="header__link-wrapper"><a href="/contact" className="header__link">Contact</a></li>
-                        {!isAuthenticated && <li className="header__link-wrapper"><a href="/login" className="header__link">Admin</a></li>}
+                        <li className="header__link-wrapper"><Link to="/contact" className="header__link">Contact</Link></li>
+                        {!isAuthenticated && <li className="header__link-wrapper"><Link to="/login" className="header__link">Admin</Link></li>}
                         {isAuthenticated && (
                             <>
-                                <li className="header__link-wrapper"><a href="/booking" className="header__link">Booking</a></li>
-                                <li className="header__link-wrapper"><a href="/bookinghistory" className="header__link">Booking History</a></li>
-                                <li className="header__link-wrapper"><a href="/" className="header__link" onClick={logout}>Logout</a></li>
+                                <li className="header__link-wrapper"><Link to="/booking" className="header__link">Booking</Link></li>
+                                <li className="header__link-wrapper"><Link to="/bookinghistory" className="header__link">Booking History</Link></li>
+                                <li className="header__link-wrapper"><Link to="/" className="header__link" onClick={logout}>Logout</Link></li>
                             </>
                         )}
                     </ul>
@@ -67,15 +67,15 @@ function Navigation() {
             {isMenuOpen && (
                 <div className={`header__sm-menu ${isMenuOpen ? 'header__sm-menu--active' : ''}`}>
                     <ul className="header__sm-menu-links">
-                        <li className="header__sm-menu-link" onClick={() => setMenuOpen(false)}><a href="/">Home</a></li>
-                        <li className="header__sm-menu-link" onClick={() => setMenuOpen(false)}><a href="/about">About</a></li>
-                        <li className="header__sm-menu-link" onClick={() => setMenuOpen(false)}><a href="/contact">Contact</a></li>
-                        {!isAuthenticated && <li className="header__sm-menu-link" onClick={() => setMenuOpen(false)}><a href="/login">Admin</a></li>}
+                        <li className="header__sm-menu-link" onClick={() => setMenuOpen(false)}><Link to="/">Home</Link></li>
+                        <li className="header__sm-menu-link" onClick={() => setMenuOpen(false)}><Link to="/about">About</Link></li>
+                        <li className="header__sm-menu-link" onClick={() => setMenuOpen(false)}><Link to="/contact">Contact</Link></li>
+                        {!isAuthenticated && <li className="header__sm-menu-link" onClick={() => setMenuOpen(false)}><a href="/login">Admin</Link></li>}
                         {isAuthenticated && (
                             <>
-                                <li className="header__sm-menu-link" onClick={() => setMenuOpen(false)}><a href="/booking">Booking</a></li>
-                                <li className="header__sm-menu-link" onClick={() => setMenuOpen(false)}><a href="/bookinghistory">Booking History</a></li>
-                                <li className="header__sm-menu-link" onClick={() => setMenuOpen(false)}><a href="/" onClick={logout}>Logout</a></li>
+                                <li className="header__sm-menu-link" onClick={() => setMenuOpen(false)}><Link to="/booking">Booking</Link></li>
+                                <li className="header__sm-menu-link" onClick={() => setMenuOpen(false)}><Link to="/bookinghistory">Booking History</Link></li>
+                                <li className="header__sm-menu-link" onClick={() => setMenuOpen(false)}><Link to="/" onClick={logout}>Logout</Link></li>
                             </>
                         )}
                     </ul>
