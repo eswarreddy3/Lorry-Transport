@@ -70,7 +70,7 @@ function Navigation() {
                         <li className="header__sm-menu-link" onClick={() => setMenuOpen(false)}><Link to="/">Home</Link></li>
                         <li className="header__sm-menu-link" onClick={() => setMenuOpen(false)}><Link to="/about">About</Link></li>
                         <li className="header__sm-menu-link" onClick={() => setMenuOpen(false)}><Link to="/contact">Contact</Link></li>
-                        {!isAuthenticated && <li className="header__sm-menu-link" onClick={() => setMenuOpen(false)}><a href="/login">Admin</Link></li>}
+                        {!isAuthenticated && <li className="header__sm-menu-link" onClick={() => setMenuOpen(false)}><Link to="/login">Admin</Link></li>}
                         {isAuthenticated && (
                             <>
                                 <li className="header__sm-menu-link" onClick={() => setMenuOpen(false)}><Link to="/booking">Booking</Link></li>
