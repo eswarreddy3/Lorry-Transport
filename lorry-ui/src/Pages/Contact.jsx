@@ -28,7 +28,7 @@ function Contact() {
               <p className="paraContact"><FontAwesomeIcon className="icon" icon={faMapMarkerAlt} /> Near Kallam College, Guntur-Chennai Hwy, Dasaripalem, Andhra Pradesh 522019 India</p>
             </section>
             <a href="https://wa.me/919347357455?text=I'm%20interested%20in%20your%20services" target="_blank" rel="noopener noreferrer">
-                <button className="whatsappButton">Contact Us on WhatsApp</button>
+                <button className="whatsappButton">Contact us in WhatsApp</button>
               </a>
           </div>
           <div className="mapArea">
